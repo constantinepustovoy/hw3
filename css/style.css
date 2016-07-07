@@ -1,3 +1,11 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	list-style: none;
+	text-decoration: none;
+}
+
 body{
 	font-family: "Arial", sans-serif;
 	background: #f9f9f9;
@@ -32,8 +40,8 @@ header{
 	list-style: none;
 	display: inline-block;
 	vertical-align: middle;
-	text-align: center;
-	width: 150px;
+	text-align: -webkit-match-parent;
+
 
 }
 .main_list{
@@ -42,18 +50,16 @@ header{
     background: -webkit-linear-gradient(90deg, rgb(68, 67, 67) 0%, rgb(94, 94,94) 100%);
     background: -ms-linear-gradient(90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
 }
-.main_list li:first-child{
-	width: 144px;
-}
 
 .main_list li a{
-	display: inline-block;
+	display: block;
 	text-decoration: none;
 	color: #e5e5e5; 
 	padding: 12px 40px 12px 40px;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 	vertical-align: middle;
 	font-family: "Verdana", sans-serif;
+	text-align: -webkit-match-parent;
 }
 
 .main_list li a.active{
@@ -68,10 +74,8 @@ header{
 	background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
 	background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
 	background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
-	border-right: 1px;
-	border-left: 1px;
-	border-color: transparent;
-	border-collapse: collapse;
+ 	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
 }
 
 .goods_list li{
@@ -93,7 +97,6 @@ header{
 	color: #656363;
 	padding: 12px 24px;
 	width: 181px;
-
 }
 
 .goods_list{
@@ -112,6 +115,13 @@ header{
 	color: #2c2c2c;
 	font-weight: 600;
 	
+}
+
+.goods_list li a:hover{
+	background-color: #f9f9f9;
+	padding-left: 35px;
+	color: #2c2c2c;
+	font-weight: 600;
 }
 
 .left_block{
@@ -168,5 +178,9 @@ footer{
 }
 
 .bottom_list li a.active1{
+	text-decoration: underline;
+}
+
+.bottom_list li a:hover{
 	text-decoration: underline;
 }
