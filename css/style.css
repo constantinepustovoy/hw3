@@ -17,7 +17,7 @@ body{
 	margin: 0 auto;
 	border-right: 1px solid #dbdbdb;
 	border-left: 1px solid #dbdbdb;
-	padding: 0px 48px 0px 46px;
+	padding: 0px 48px 5px 46px;
 	box-sizing: border-box;
 	padding-top: 50px;
 	-webkit-box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.3);
@@ -60,14 +60,6 @@ header{
 	vertical-align: middle;
 	font-family: "Verdana", sans-serif;
 	text-align: -webkit-match-parent;
-}
-
-.main_list li a.active{
-	background: -moz-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
-	background: -webkit-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
-	background: -ms-linear-gradient(90deg, #2e2e2e 0%, #4a4a4a 100%);
-	border-right: 1px solid #838383;
-	border-left: 1px solid #838383;
 }
 
 .main_list li a:hover{
